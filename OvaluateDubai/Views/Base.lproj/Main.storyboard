@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TL8-XF-VEN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Thin.ttf">
+            <string>Roboto-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="pKc-Bx-85K">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="TL8-XF-VEN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JpC-P8-pO7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QIa-HF-bOb" kind="relationship" relationship="rootViewController" id="q5I-9P-IRc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEl-G0-0Ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1334" y="155"/>
+        </scene>
+        <!--Initial Screen-->
+        <scene sceneID="U6M-gd-kf9">
+            <objects>
+                <viewController storyboardIdentifier="InitialScreen" id="QIa-HF-bOb" customClass="InitialScreen" customModule="OvaluateDubai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFl-gD-13q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 70740" translatesAutoresizingMaskIntoConstraints="NO" id="dCq-Ww-x62">
+                                <rect key="frame" x="157" y="317" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pfW-kn-yG6"/>
+                                    <constraint firstAttribute="width" constant="100" id="sfh-HE-kpD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OVALUATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnj-E7-MgQ">
+                                <rect key="frame" x="121.5" y="427" width="171" height="42.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="36"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REAL STATE VALUATION SERVICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-ri-tyu">
+                                <rect key="frame" x="118" y="469.5" width="178.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wP4-Fs-KOX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xi4-ri-tyu" firstAttribute="top" secondItem="jnj-E7-MgQ" secondAttribute="bottom" id="2hp-GM-WqP"/>
+                            <constraint firstItem="jnj-E7-MgQ" firstAttribute="top" secondItem="dCq-Ww-x62" secondAttribute="bottom" constant="10" id="58D-kP-pQv"/>
+                            <constraint firstItem="dCq-Ww-x62" firstAttribute="centerX" secondItem="MFl-gD-13q" secondAttribute="centerX" id="6ro-PO-FAu"/>
+                            <constraint firstItem="jnj-E7-MgQ" firstAttribute="centerX" secondItem="MFl-gD-13q" secondAttribute="centerX" id="UkW-4Q-LGN"/>
+                            <constraint firstItem="Xi4-ri-tyu" firstAttribute="centerX" secondItem="MFl-gD-13q" secondAttribute="centerX" id="xtR-aX-Eu1"/>
+                            <constraint firstItem="jnj-E7-MgQ" firstAttribute="centerY" secondItem="MFl-gD-13q" secondAttribute="centerY" id="zHt-8B-KSR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hf5-a0-YsB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHg-pP-sdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-677" y="155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 70740" width="46" height="46"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
