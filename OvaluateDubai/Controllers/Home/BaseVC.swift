@@ -42,7 +42,7 @@ class BaseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        addChildViewController(VC: HomeVC)
+      addChildViewController(VC: HomeVC)
        
         NotificationCenter.default.addObserver(self, selector: #selector(sideMenuSelectedOption(notification:)), name: NSNotification.Name(rawValue: "post"), object: nil)
         
@@ -94,6 +94,7 @@ class BaseVC: UIViewController {
         lblValuation.textColor = AppColor.greyText
         lblBlogs.textColor = AppColor.greyText
         lblSettings.textColor = AppColor.greyText
+       
         addChildViewController(VC: HomeVC)
     }
     @IBAction func btnInspectionAction(_ sender: UIButton) {
